@@ -1,3 +1,9 @@
 type Mutation {
   createRoom(roomName: String!): VoidResponse
 }
+type VoidResponse {
+  successful: Boolean
+}
+type Query {
+  roomExists(roomName: String!): Boolean!
+}
